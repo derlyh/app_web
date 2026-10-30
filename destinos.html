@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ViajaYa – Destinos</title>
+  <meta name="description" content="Explora los mejores destinos de Europa, Asia, América y África con ViajaYa." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="ViajaYa – Inicio">✈️ ViajaYa</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MENÚ LATERAL -->
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <div class="menu-panel" id="menuPanel" role="dialog" aria-modal="true" aria-label="Menú">
+      <div class="menu-panel-header">
+        <span class="logo" style="color:#fff">✈️ ViajaYa</span>
+        <button class="menu-panel-close" id="menuClose" aria-label="Cerrar menú">✕</button>
+      </div>
+      <nav aria-label="Menú lateral">
+        <ul class="menu-panel-links">
+          <li><a href="index.html"    data-page="index.html"    data-num="01">Inicio</a></li>
+          <li><a href="destinos.html" data-page="destinos.html" data-num="02">Destinos</a></li>
+          <li><a href="consejos.html" data-page="consejos.html" data-num="03">Consejos</a></li>
+          <li><a href="galeria.html"  data-page="galeria.html"  data-num="04">Galería</a></li>
+          <li><a href="contacto.html" data-page="contacto.html" data-num="05">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="menu-panel-footer">
+        <a href="tel:+34900123456">📞 +34 900 123 456</a>
+        <a href="mailto:hola@viajaya.com">📧 hola@viajaya.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1400&q=80')" aria-label="Destinos de viaje">
+    <div class="page-hero-overlay" aria-hidden="true"></div>
+    <div class="page-hero-content container">
+      <p class="section-tag" style="color:#fff;background:rgba(255,255,255,0.2)">Nuestros destinos</p>
+      <h1>¿A dónde quieres ir?</h1>
+      <p>Más de 150 destinos esperan por ti. Filtra por región y encuentra tu próxima aventura.</p>
+    </div>
+  </div>
+
+  <!-- DESTINOS -->
+  <section class="section" aria-labelledby="destinos-h2">
+    <div class="container">
+      <h2 id="destinos-h2" class="sr-only">Lista de destinos</h2>
+
+      <!-- Filtros -->
+      <div class="filter-bar" role="group" aria-label="Filtrar por región">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="europa">Europa</button>
+        <button class="filter-btn" data-filter="asia">Asia</button>
+        <button class="filter-btn" data-filter="america">América</button>
+        <button class="filter-btn" data-filter="africa">África</button>
+      </div>
+
+      <div class="destinos-grid" id="destinosGrid" aria-live="polite">
+
+        <article class="destino-card fade-in" data-category="europa">
+          <div class="card-img" role="img" aria-label="París, Francia"
+            style="background-image:url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80')">
+            <span class="card-badge">Popular</span>
+          </div>
+          <div class="card-body">
+            <div class="card-top"><h3>París, Francia</h3><span class="card-rating">⭐ 4.9</span></div>
+            <p>La ciudad del amor te espera con su Torre Eiffel, arte y gastronomía inigualable.</p>
+            <div class="card-footer">
+              <span class="card-price">Desde <strong>$899</strong></span>
+              <button class="btn-card" data-destino="paris">Ver más →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="destino-card fade-in" data-category="asia">
+          <div class="card-img" role="img" aria-label="Tokio, Japón"
+            style="background-image:url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&q=80')">
+            <span class="card-badge">Tendencia</span>
+          </div>
+          <div class="card-body">
+            <div class="card-top"><h3>Tokio, Japón</h3><span class="card-rating">⭐ 4.8</span></div>
+            <p>Tradición y modernidad fusionadas en una ciudad que nunca deja de sorprender.</p>
+            <div class="card-footer">
+              <span class="card-price">Desde <strong>$1,200</strong></span>
+              <button class="btn-card" data-destino="tokio">Ver más →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="destino-card fade-in" data-category="america">
+          <div class="card-img" role="img" aria-label="Río de Janeiro, Brasil"
+            style="background-image:url('https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=600&q=80')">
+            <span class="card-badge">Oferta</span>
+          </div>
+          <div class="card-body">
+            <div class="card-top"><h3>Río de Janeiro, Brasil</h3><span class="card-rating">⭐ 4.7</span></div>
+            <p>Playas paradisíacas, el Cristo Redentor y la energía contagiosa del carnaval.</p>
+            <div class="card-footer">
+              <span class="card-price">Desde <strong>$750</strong></span>
+              <button class="btn-card" data-destino="rio">Ver más →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="destino-card fade-in" data-category="europa">
+          <div class="card-img" role="img" aria-label="Venecia, Italia"
+            style="background-image:url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=600&q=80')">
+          </div>
+          <div class="card-body">
+            <div class="card-top"><h3>Venecia, Italia</h3><span class="card-rating">⭐ 4.8</span></div>
+            <p>Canales románticos, góndolas y arquitectura que te transporta al pasado.</p>
+            <div class="card-footer">
+              <span class="card-price">Desde <strong>$980</strong></span>
+              <button class="btn-card" data-destino="venecia">Ver más →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="destino-card fade-in" data-category="asia">
+          <div class="card-img" role="img" aria-label="Bali, Indonesia"
+            style="background-image:url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80')">
+          </div>
+          <div class="card-body">
+            <div class="card-top"><h3>Bali, Indonesia</h3><span class="card-rating">⭐ 4.9</span></div>
+            <p>Templos místicos, arrozales en terrazas y playas de arena blanca te esperan.</p>
+            <div class="card-footer">
+              <span class="card-price">Desde <strong>$850</strong></span>
+              <button class="btn-card" data-destino="bali">Ver más →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="destino-card fade-in" data-category="africa">
+          <div class="card-img" role="img" aria-label="Safari en Kenia"
+            style="background-image:url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&q=80')">
+            <span class="card-badge">Único</span>
+          </div>
+          <div class="card-body">
+            <div class="card-top"><h3>Safari en Kenia</h3><span class="card-rating">⭐ 5.0</span></div>
+            <p>Una experiencia única viendo leones, elefantes y jirafas en su hábitat natural.</p>
+            <div class="card-footer">
+              <span class="card-price">Desde <strong>$2,100</strong></span>
+              <button class="btn-card" data-destino="kenia">Ver más →</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL DESTINO -->
+  <div class="destino-modal-overlay" id="destinoModalOverlay" aria-hidden="true">
+    <div class="destino-modal" id="destinoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="destino-modal-close" id="destinoModalClose" aria-label="Cerrar">✕</button>
+      <div class="modal-hero" id="modalHero" role="img" aria-label=""></div>
+      <div class="modal-body">
+        <div class="modal-header">
+          <div>
+            <span class="modal-badge" id="modalBadge"></span>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <p class="modal-subtitle" id="modalSubtitle"></p>
+          </div>
+          <div class="modal-meta">
+            <span class="modal-rating" id="modalRating"></span>
+            <span class="modal-price" id="modalPrice"></span>
+          </div>
+        </div>
+        <div class="modal-pills" id="modalPills"></div>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-includes">
+          <h3>¿Qué incluye el paquete?</h3>
+          <ul class="modal-includes-list" id="modalIncludes"></ul>
+        </div>
+        <div class="modal-highlights">
+          <h3>Experiencias destacadas</h3>
+          <div class="modal-highlights-grid" id="modalHighlights"></div>
+        </div>
+        <div class="modal-cta">
+          <div class="modal-cta-text">
+            <strong id="modalCtaPrice"></strong>
+            <span>por persona · vuelo + hotel incluido</span>
+          </div>
+          <button class="btn btn-primary" id="modalCtaBtn">Reservar ahora</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">✈️ ViajaYa</div>
+          <p>Tu compañero de viaje de confianza.</p>
+          <div class="social-links" aria-label="Redes sociales">
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+        <nav class="footer-links" aria-label="Páginas">
+          <h4>Páginas</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="consejos.html">Consejos</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-links" aria-label="Regiones">
+          <h4>Regiones</h4>
+          <ul>
+            <li><a href="destinos.html">Europa</a></li>
+            <li><a href="destinos.html">Asia</a></li>
+            <li><a href="destinos.html">América</a></li>
+            <li><a href="destinos.html">África</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-links" aria-label="Ayuda">
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="contacto.html">Cancelaciones</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 ViajaYa. Todos los derechos reservados.</p></div>
+    </div>
+  </footer>
+
+  <!-- BOT -->
+  <div class="bot-container" id="botContainer">
+    <div class="bot-header">
+      <div class="bot-avatar" aria-hidden="true">🤖</div>
+      <div class="bot-info"><strong>Asistente ViajaYa</strong><span class="bot-status">● En línea</span></div>
+      <button class="bot-close" id="botClose" aria-label="Cerrar asistente">✕</button>
+    </div>
+    <div class="bot-messages" id="botMessages" role="log" aria-live="polite">
+      <div class="bot-msg bot"><div class="msg-bubble">¡Hola! 👋 ¿Te ayudo a elegir tu destino?</div></div>
+    </div>
+    <div class="bot-quick-replies" id="quickReplies"></div>
+    <div class="bot-input-area">
+      <label for="botInput" class="sr-only">Escribe tu pregunta</label>
+      <input type="text" id="botInput" placeholder="Escribe tu pregunta…" autocomplete="off" />
+      <button id="botSend" aria-label="Enviar">➤</button>
+    </div>
+  </div>
+  <button class="bot-toggle" id="botToggle" aria-label="Abrir asistente" aria-expanded="false">
+    <span class="bot-toggle-open"  aria-hidden="true">💬</span>
+    <span class="bot-toggle-close" aria-hidden="true">✕</span>
+    <span class="bot-toggle-badge" id="botBadge">1</span>
+  </button>
+
+  <script src="nav.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

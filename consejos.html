@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ViajaYa – Consejos de viaje</title>
+  <meta name="description" content="Los mejores consejos para viajar mejor: equipaje, visa, seguro, dinero y más." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="ViajaYa – Inicio">✈️ ViajaYa</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPanel">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MENÚ LATERAL -->
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+    <div class="menu-panel" id="menuPanel" role="dialog" aria-modal="true" aria-label="Menú">
+      <div class="menu-panel-header">
+        <span class="logo" style="color:#fff">✈️ ViajaYa</span>
+        <button class="menu-panel-close" id="menuClose" aria-label="Cerrar menú">✕</button>
+      </div>
+      <nav aria-label="Menú lateral">
+        <ul class="menu-panel-links">
+          <li><a href="index.html"    data-page="index.html"    data-num="01">Inicio</a></li>
+          <li><a href="destinos.html" data-page="destinos.html" data-num="02">Destinos</a></li>
+          <li><a href="consejos.html" data-page="consejos.html" data-num="03">Consejos</a></li>
+          <li><a href="galeria.html"  data-page="galeria.html"  data-num="04">Galería</a></li>
+          <li><a href="contacto.html" data-page="contacto.html" data-num="05">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="menu-panel-footer">
+        <a href="tel:+34900123456">📞 +34 900 123 456</a>
+        <a href="mailto:hola@viajaya.com">📧 hola@viajaya.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=1400&q=80')">
+    <div class="page-hero-overlay" aria-hidden="true"></div>
+    <div class="page-hero-content container">
+      <p class="section-tag" style="color:#fff;background:rgba(255,255,255,0.2)">Tips de viajero</p>
+      <h1>Viaja más inteligente</h1>
+      <p>Todo lo que debes saber antes de hacer las maletas.</p>
+    </div>
+  </div>
+
+  <!-- CONSEJOS PRINCIPALES -->
+  <section class="section consejos-section" aria-labelledby="consejos-h2">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Esenciales</p>
+        <h2 id="consejos-h2">Antes de salir</h2>
+        <p class="section-desc">Los pasos que no puedes saltarte antes de cada viaje.</p>
+      </div>
+      <div class="consejos-grid">
+        <div class="consejo-card fade-in">
+          <div class="consejo-icon" aria-hidden="true">🗺️</div>
+          <h3>Planifica con antelación</h3>
+          <p>Reserva vuelos y hoteles con al menos 2 meses de anticipación para conseguir los mejores precios y disponibilidad.</p>
+        </div>
+        <div class="consejo-card fade-in">
+          <div class="consejo-icon" aria-hidden="true">📄</div>
+          <h3>Documentos en orden</h3>
+          <p>Verifica que tu pasaporte tenga al menos 6 meses de vigencia. Revisa si el destino requiere visa con anticipación.</p>
+        </div>
+        <div class="consejo-card fade-in">
+          <div class="consejo-icon" aria-hidden="true">💊</div>
+          <h3>Seguro de viaje</h3>
+          <p>Nunca viajes sin seguro médico. En el extranjero, una visita al médico puede costar miles de dólares.</p>
+        </div>
+        <div class="consejo-card fade-in">
+          <div class="consejo-icon" aria-hidden="true">💳</div>
+          <h3>Dinero y tarjetas</h3>
+          <p>Lleva efectivo de emergencia y avisa a tu banco antes de viajar para evitar bloqueos por transacciones internacionales.</p>
+        </div>
+        <div class="consejo-card fade-in">
+          <div class="consejo-icon" aria-hidden="true">🎒</div>
+          <h3>Equipaje inteligente</h3>
+          <p>Viaja ligero. Un equipaje de mano bien organizado te ahorra tiempo, costos de facturación y estrés en aeropuertos.</p>
+        </div>
+        <div class="consejo-card fade-in">
+          <div class="consejo-icon" aria-hidden="true">📱</div>
+          <h3>Apps esenciales</h3>
+          <p>Google Translate, Maps.me offline, XE Currency y TripAdvisor son tus mejores aliados durante el viaje.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSEJOS AVANZADOS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Nivel avanzado</p>
+        <h2>Tips de viajero experto</h2>
+        <p class="section-desc">Trucos que marcan la diferencia cuando ya tienes experiencia viajando.</p>
+      </div>
+      <div class="consejos-grid">
+        <div class="consejo-card fade-in">
+          <div class="consejo-icon" aria-hidden="true">🌐</div>
+          <h3>SIM local o eSIM</h3>
+          <p>Consigue una SIM local o eSIM internacional al llegar. No dependas del WiFi del hotel para mapas ni pagos.</p>
+        </div>
+        <div class="consejo-card fade-in">
+          <div class="consejo-icon" aria-hidden="true">🏦</div>
+          <h3>Cuenta multimoneda</h3>
+          <p>Abre una cuenta en Wise o Revolut antes de viajar. Evitarás comisiones abusivas por cambio de divisa.</p>
+        </div>
+        <div class="consejo-card fade-in">
+          <div class="consejo-icon" aria-hidden="true">☁️</div>
+          <h3>Respaldo digital</h3>
+          <p>Fotografía todos tus documentos y guárdalos en la nube. Si pierdes el pasaporte, tener las fotos acelera el trámite.</p>
+        </div>
+        <div class="consejo-card fade-in">
+          <div class="consejo-icon" aria-hidden="true">🧴</div>
+          <h3>Regla del equipaje de mano</h3>
+          <p>Líquidos en envases de máximo 100ml en bolsa transparente. Así pasas el control de seguridad sin sorpresas.</p>
+        </div>
+        <div class="consejo-card fade-in">
+          <div class="consejo-icon" aria-hidden="true">⏰</div>
+          <h3>Llega al aeropuerto temprano</h3>
+          <p>Para vuelos internacionales, llega 3 horas antes. Mejor sobrar tiempo que perder tu vuelo.</p>
+        </div>
+        <div class="consejo-card fade-in">
+          <div class="consejo-icon" aria-hidden="true">🌍</div>
+          <h3>Aprende lo básico del idioma</h3>
+          <p>"Hola", "gracias", "disculpe" y "¿cuánto cuesta?" en el idioma local abren muchas puertas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-box">
+        <div class="newsletter-text">
+          <h2>¿Listo para tu próximo viaje?</h2>
+          <p>Explora nuestros destinos y empieza a planear la aventura de tu vida.</p>
+        </div>
+        <div style="display:flex;gap:16px;flex-wrap:wrap">
+          <a href="destinos.html" class="btn btn-primary">Ver destinos</a>
+          <a href="contacto.html" class="btn btn-outline">Hablar con un asesor</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">✈️ ViajaYa</div>
+          <p>Tu compañero de viaje de confianza.</p>
+          <div class="social-links" aria-label="Redes sociales">
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+        <nav class="footer-links" aria-label="Páginas">
+          <h4>Páginas</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="consejos.html">Consejos</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-links" aria-label="Categorías">
+          <h4>Categorías</h4>
+          <ul>
+            <li><a href="consejos.html">Antes del viaje</a></li>
+            <li><a href="consejos.html">Durante el viaje</a></li>
+            <li><a href="consejos.html">Equipaje</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-links" aria-label="Ayuda">
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="contacto.html">Cancelaciones</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 ViajaYa. Todos los derechos reservados.</p></div>
+    </div>
+  </footer>
+
+  <!-- BOT -->
+  <div class="bot-container" id="botContainer">
+    <div class="bot-header">
+      <div class="bot-avatar" aria-hidden="true">🤖</div>
+      <div class="bot-info"><strong>Asistente ViajaYa</strong><span class="bot-status">● En línea</span></div>
+      <button class="bot-close" id="botClose" aria-label="Cerrar asistente">✕</button>
+    </div>
+    <div class="bot-messages" id="botMessages" role="log" aria-live="polite">
+      <div class="bot-msg bot"><div class="msg-bubble">¡Hola! 👋 ¿Tienes dudas sobre tu viaje?</div></div>
+    </div>
+    <div class="bot-quick-replies" id="quickReplies"></div>
+    <div class="bot-input-area">
+      <label for="botInput" class="sr-only">Escribe tu pregunta</label>
+      <input type="text" id="botInput" placeholder="Escribe tu pregunta…" autocomplete="off" />
+      <button id="botSend" aria-label="Enviar">➤</button>
+    </div>
+  </div>
+  <button class="bot-toggle" id="botToggle" aria-label="Abrir asistente" aria-expanded="false">
+    <span class="bot-toggle-open"  aria-hidden="true">💬</span>
+    <span class="bot-toggle-close" aria-hidden="true">✕</span>
+    <span class="bot-toggle-badge" id="botBadge">1</span>
+  </button>
+
+  <script src="nav.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
